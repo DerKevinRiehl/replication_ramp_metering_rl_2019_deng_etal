@@ -1,0 +1,3 @@
+scenario,controller,avg_speed_kmh,avg_queue_m,total_return,episodes
+multi_flat_peak,alinea,47.94294873722971,88.53944765814369,9381.360953139683,1
+multi_flat_peak,ppo,46.12482637531851,64.73122779728939,9516.408862941498,1

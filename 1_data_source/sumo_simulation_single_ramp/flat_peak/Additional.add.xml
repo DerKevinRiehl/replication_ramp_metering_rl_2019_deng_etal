@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- Original detectors for RL observation -->
+    <inductionLoop id="det_main_p1_l0" lane="E_main_before_0" pos="0.00" period="60.00" file="detectors_p1.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p1_l1" lane="E_main_before_1" pos="0.00" period="60.00" file="detectors_p1.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p1_l2" lane="E_main_before_2" pos="0.00" period="60.00" file="detectors_p1.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p2_l0" lane="E_main_before_0" pos="200.00" period="60.00" file="detectors_p2.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p2_l1" lane="E_main_before_1" pos="200.00" period="60.00" file="detectors_p2.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p2_l2" lane="E_main_before_2" pos="200.00" period="60.00" file="detectors_p2.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p3_l0" lane="E_main_before_0" pos="400.00" period="60.00" file="detectors_p3.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p3_l1" lane="E_main_before_1" pos="400.00" period="60.00" file="detectors_p3.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p3_l2" lane="E_main_before_2" pos="400.00" period="60.00" file="detectors_p3.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p4_l0_acceleration_lane" lane="E_main_with_acc_lane_0" pos="70.00" period="60.00" file="detectors_p4.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p4_l1" lane="E_main_with_acc_lane_1" pos="70.00" period="60.00" file="detectors_p4.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p4_l2" lane="E_main_with_acc_lane_2" pos="70.00" period="60.00" file="detectors_p4.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p4_l3" lane="E_main_with_acc_lane_3" pos="70.00" period="60.00" file="detectors_p4.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p5_l0" lane="E_main_after_0" pos="50.00" period="60.00" file="detectors_p5.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p5_l1" lane="E_main_after_1" pos="50.00" period="60.00" file="detectors_p5.xml" friendlyPos="1"/>
+    <inductionLoop id="det_main_p5_l2" lane="E_main_after_2" pos="50.00" period="60.00" file="detectors_p5.xml" friendlyPos="1"/>
+
+    <!-- Visualization detectors: 30 profiles for space-time diagrams -->
+    <inductionLoop id="det_vis_01_l0" lane="E_main_before_0" pos="16.47" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_01_l1" lane="E_main_before_1" pos="16.47" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_01_l2" lane="E_main_before_2" pos="16.47" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_02_l0" lane="E_main_before_0" pos="49.40" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_02_l1" lane="E_main_before_1" pos="49.40" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_02_l2" lane="E_main_before_2" pos="49.40" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_03_l0" lane="E_main_before_0" pos="82.33" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_03_l1" lane="E_main_before_1" pos="82.33" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_03_l2" lane="E_main_before_2" pos="82.33" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_04_l0" lane="E_main_before_0" pos="115.27" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_04_l1" lane="E_main_before_1" pos="115.27" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_04_l2" lane="E_main_before_2" pos="115.27" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_05_l0" lane="E_main_before_0" pos="148.20" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_05_l1" lane="E_main_before_1" pos="148.20" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_05_l2" lane="E_main_before_2" pos="148.20" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_06_l0" lane="E_main_before_0" pos="181.14" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_06_l1" lane="E_main_before_1" pos="181.14" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_06_l2" lane="E_main_before_2" pos="181.14" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_07_l0" lane="E_main_before_0" pos="214.07" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_07_l1" lane="E_main_before_1" pos="214.07" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_07_l2" lane="E_main_before_2" pos="214.07" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_08_l0" lane="E_main_before_0" pos="247.00" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_08_l1" lane="E_main_before_1" pos="247.00" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_08_l2" lane="E_main_before_2" pos="247.00" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_09_l0" lane="E_main_before_0" pos="279.94" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_09_l1" lane="E_main_before_1" pos="279.94" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_09_l2" lane="E_main_before_2" pos="279.94" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_10_l0" lane="E_main_before_0" pos="312.87" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_10_l1" lane="E_main_before_1" pos="312.87" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_10_l2" lane="E_main_before_2" pos="312.87" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_11_l0" lane="E_main_before_0" pos="345.80" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_11_l1" lane="E_main_before_1" pos="345.80" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_11_l2" lane="E_main_before_2" pos="345.80" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_12_l0" lane="E_main_before_0" pos="378.74" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_12_l1" lane="E_main_before_1" pos="378.74" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_12_l2" lane="E_main_before_2" pos="378.74" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_13_l0" lane="E_main_with_acc_lane_0" pos="7.25" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_13_l1" lane="E_main_with_acc_lane_1" pos="7.25" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_13_l2" lane="E_main_with_acc_lane_2" pos="7.25" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_13_l3" lane="E_main_with_acc_lane_3" pos="7.25" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_14_l0" lane="E_main_with_acc_lane_0" pos="40.18" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_14_l1" lane="E_main_with_acc_lane_1" pos="40.18" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_14_l2" lane="E_main_with_acc_lane_2" pos="40.18" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_14_l3" lane="E_main_with_acc_lane_3" pos="40.18" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_15_l0" lane="E_main_with_acc_lane_0" pos="73.12" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_15_l1" lane="E_main_with_acc_lane_1" pos="73.12" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_15_l2" lane="E_main_with_acc_lane_2" pos="73.12" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_15_l3" lane="E_main_with_acc_lane_3" pos="73.12" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_16_l0" lane="E_main_with_acc_lane_0" pos="106.05" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_16_l1" lane="E_main_with_acc_lane_1" pos="106.05" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_16_l2" lane="E_main_with_acc_lane_2" pos="106.05" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_16_l3" lane="E_main_with_acc_lane_3" pos="106.05" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_17_l0" lane="E_main_after_0" pos="16.40" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_17_l1" lane="E_main_after_1" pos="16.40" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_17_l2" lane="E_main_after_2" pos="16.40" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_18_l0" lane="E_main_after_0" pos="49.33" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_18_l1" lane="E_main_after_1" pos="49.33" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_18_l2" lane="E_main_after_2" pos="49.33" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_19_l0" lane="E_main_after_0" pos="82.26" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_19_l1" lane="E_main_after_1" pos="82.26" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_19_l2" lane="E_main_after_2" pos="82.26" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_20_l0" lane="E_main_after_0" pos="115.20" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_20_l1" lane="E_main_after_1" pos="115.20" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_20_l2" lane="E_main_after_2" pos="115.20" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_21_l0" lane="E_main_after_0" pos="148.13" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_21_l1" lane="E_main_after_1" pos="148.13" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_21_l2" lane="E_main_after_2" pos="148.13" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_22_l0" lane="E_main_after_0" pos="181.06" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_22_l1" lane="E_main_after_1" pos="181.06" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_22_l2" lane="E_main_after_2" pos="181.06" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_23_l0" lane="E_main_after_0" pos="214.00" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_23_l1" lane="E_main_after_1" pos="214.00" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_23_l2" lane="E_main_after_2" pos="214.00" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_24_l0" lane="E_main_after_0" pos="246.93" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_24_l1" lane="E_main_after_1" pos="246.93" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_24_l2" lane="E_main_after_2" pos="246.93" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_25_l0" lane="E_main_after_0" pos="279.86" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_25_l1" lane="E_main_after_1" pos="279.86" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_25_l2" lane="E_main_after_2" pos="279.86" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_26_l0" lane="E_main_after_0" pos="312.80" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_26_l1" lane="E_main_after_1" pos="312.80" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_26_l2" lane="E_main_after_2" pos="312.80" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_27_l0" lane="E_main_after_0" pos="345.73" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_27_l1" lane="E_main_after_1" pos="345.73" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_27_l2" lane="E_main_after_2" pos="345.73" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_28_l0" lane="E_main_after_0" pos="378.67" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_28_l1" lane="E_main_after_1" pos="378.67" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_28_l2" lane="E_main_after_2" pos="378.67" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_29_l0" lane="E_main_after_0" pos="411.60" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_29_l1" lane="E_main_after_1" pos="411.60" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_29_l2" lane="E_main_after_2" pos="411.60" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_30_l0" lane="E_main_after_0" pos="444.53" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_30_l1" lane="E_main_after_1" pos="444.53" period="60.00" file="detectors_vis.xml"/>
+    <inductionLoop id="det_vis_30_l2" lane="E_main_after_2" pos="444.53" period="60.00" file="detectors_vis.xml"/>
+
+    <!-- e1 and e2 detectors on ramps -->
+    <inductionLoop id="det_ramp_e1" lane="E_ramp_0" pos="120.00" period="60.00" file="ramp_e1.xml"/>
+    <laneAreaDetector id="queue_ramp" lane="E_ramp_0" pos="73.72" endPos="-1" period="60.00" file="queue_ramp.xml"/>
+</additional>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicle type: SUMO defaults + paper parameters (Table I) -->
+    <vType id="DEFAULT_VEHTYPE" accel="2.6" decel="4.5" sigma="0.5"
+        length="5.0" minGap="2.5" maxSpeed="22.22" tau="1.5"
+        speedDev="0.1" lcCooperative="0.5" lcAssertive="1.0"/>
+
+    <!-- Demand approach: probability-based per-lane Bernoulli process.
+         Formula: probability = demand_veh_h / num_lanes / 3600
+         Sharp peak: mainline 3750-7059 veh/h (3 lanes), ramp 800-1500 veh/h (1 lane)
+         Demand values from config.py / paper Figure 5. -->
+
+    <!-- === t=0-600s: Main=3750 veh/h, Ramp=800 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t0" begin="0.00" end="600.00"
+          probability="0.2778" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t0" begin="0.00" end="600.00"
+          probability="0.2778" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t0" begin="0.00" end="600.00"
+          probability="0.2778" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t0" begin="0.00" end="600.00"
+          probability="0.1778" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=600-1200s: Main=3829.79 veh/h, Ramp=823.80 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t1" begin="600.00" end="1200.00"
+          probability="0.2837" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t1" begin="600.00" end="1200.00"
+          probability="0.2837" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t1" begin="600.00" end="1200.00"
+          probability="0.2837" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t1" begin="600.00" end="1200.00"
+          probability="0.1830" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=1200-1800s: Main=4137.93 veh/h, Ramp=888.89 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t2" begin="1200.00" end="1800.00"
+          probability="0.3065" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t2" begin="1200.00" end="1800.00"
+          probability="0.3065" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t2" begin="1200.00" end="1800.00"
+          probability="0.3065" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t2" begin="1200.00" end="1800.00"
+          probability="0.1975" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=1800-2400s: Main=4736.84 veh/h, Ramp=1022.73 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t3" begin="1800.00" end="2400.00"
+          probability="0.3509" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t3" begin="1800.00" end="2400.00"
+          probability="0.3509" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t3" begin="1800.00" end="2400.00"
+          probability="0.3509" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t3" begin="1800.00" end="2400.00"
+          probability="0.2273" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=2400-3000s: Main=5714.29 veh/h, Ramp=1220.34 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t4" begin="2400.00" end="3000.00"
+          probability="0.4233" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t4" begin="2400.00" end="3000.00"
+          probability="0.4233" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t4" begin="2400.00" end="3000.00"
+          probability="0.4233" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t4" begin="2400.00" end="3000.00"
+          probability="0.2712" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=3000-3600s: Main=6666.67 veh/h, Ramp=1417.32 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t5" begin="3000.00" end="3600.00"
+          probability="0.4938" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t5" begin="3000.00" end="3600.00"
+          probability="0.4938" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t5" begin="3000.00" end="3600.00"
+          probability="0.4938" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t5" begin="3000.00" end="3600.00"
+          probability="0.3150" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=3600-4200s: Main=7058.82 veh/h, Ramp=1500 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t6" begin="3600.00" end="4200.00"
+          probability="0.5229" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t6" begin="3600.00" end="4200.00"
+          probability="0.5229" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t6" begin="3600.00" end="4200.00"
+          probability="0.5229" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t6" begin="3600.00" end="4200.00"
+          probability="0.3334" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=4200-4800s: Main=6666.67 veh/h, Ramp=1417.32 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t7" begin="4200.00" end="4800.00"
+          probability="0.4938" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t7" begin="4200.00" end="4800.00"
+          probability="0.4938" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t7" begin="4200.00" end="4800.00"
+          probability="0.4938" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t7" begin="4200.00" end="4800.00"
+          probability="0.3150" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=4800-5400s: Main=5714.29 veh/h, Ramp=1220.34 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t8" begin="4800.00" end="5400.00"
+          probability="0.4233" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t8" begin="4800.00" end="5400.00"
+          probability="0.4233" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t8" begin="4800.00" end="5400.00"
+          probability="0.4233" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t8" begin="4800.00" end="5400.00"
+          probability="0.2712" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=5400-6000s: Main=4736.84 veh/h, Ramp=1022.73 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t9" begin="5400.00" end="6000.00"
+          probability="0.3509" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t9" begin="5400.00" end="6000.00"
+          probability="0.3509" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t9" begin="5400.00" end="6000.00"
+          probability="0.3509" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t9" begin="5400.00" end="6000.00"
+          probability="0.2273" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=6000-6600s: Main=4137.93 veh/h, Ramp=888.89 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t10" begin="6000.00" end="6600.00"
+          probability="0.3065" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t10" begin="6000.00" end="6600.00"
+          probability="0.3065" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t10" begin="6000.00" end="6600.00"
+          probability="0.3065" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t10" begin="6000.00" end="6600.00"
+          probability="0.1975" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+
+    <!-- === t=6600-7200s: Main=3829.79 veh/h, Ramp=823.80 veh/h === -->
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L0_t11" begin="6600.00" end="7200.00"
+          probability="0.2837" departLane="0" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L1_t11" begin="6600.00" end="7200.00"
+          probability="0.2837" departLane="1" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_main_L2_t11" begin="6600.00" end="7200.00"
+          probability="0.2837" departLane="2" departSpeed="avg"
+          from="E_upstream" to="E_main_after"/>
+    <flow type="DEFAULT_VEHTYPE" id="flow_ramp_t11" begin="6600.00" end="7200.00"
+          probability="0.1830" departLane="0" departSpeed="max"
+          color="255,22,0" from="E_ramp" to="E_main_after"/>
+</routes>

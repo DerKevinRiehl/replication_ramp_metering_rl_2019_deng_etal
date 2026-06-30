@@ -1,0 +1,9 @@
+variant,scenario,controller,description,speed_kmh,queue_m,total_return,d_paper,speed_delta_paper_pct,queue_delta_paper_pct
+eidm_tau15_step05,stationary,no_control,"EIDM (Extended IDM) model, T=1.5s, step=0.5s, adds reaction time",45.57,13.68,5304.61,2.1726,18.00,199.26
+eidm_tau20_step05,stationary,no_control,"EIDM model, T=2.0s, step=0.5s, higher headway + reaction time",37.87,100.32,3340.63,20.9721,-1.94,2095.27
+idm_tau15_step05,stationary,no_control,"IDM car-following model, T=1.5s (desired headway), step=0.5s",35.32,1.82,4217.01,0.6876,-8.54,-60.22
+idm_tau15_step10,stationary,no_control,"IDM model + step=1.0s, combined effect",35.09,143.05,2494.59,30.3923,-9.13,3030.09
+idm_tau20_step05,stationary,no_control,"IDM car-following model, T=2.0s (higher headway, more congestion), step=0.5s",35.02,3.38,4161.88,0.3547,-9.32,-26.15
+krauss_tau15_step10,stationary,no_control,"Krauss baseline, tau=1.5s, step=1.0s (reduces capacity)",36.85,89.53,3348.03,18.6370,-4.57,1859.13
+krauss_tau18_step10,stationary,no_control,"Krauss, tau=1.8s, step=1.0s, more headway + coarser step",37.23,63.56,3704.34,12.9450,-3.61,1290.89
+krauss_tau20_step10,stationary,no_control,"Krauss, tau=2.0s, step=1.0s, highest congestion level",37.10,58.31,3752.68,11.7980,-3.93,1175.87

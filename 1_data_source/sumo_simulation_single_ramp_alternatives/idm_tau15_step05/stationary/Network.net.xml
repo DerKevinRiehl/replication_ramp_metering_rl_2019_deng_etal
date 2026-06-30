@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-18T10:50:33.468096+01:00 by Eclipse SUMO netconvert 1.26.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="C:\Users\mprosperi\Desktop\replication_project\reproductions\2019_deng_et_al\1_data_source\sumo_simulation_single_ramp\stationary\_nodes.nod.xml"/>
+        <edge-files value="C:\Users\mprosperi\Desktop\replication_project\reproductions\2019_deng_et_al\1_data_source\sumo_simulation_single_ramp\stationary\_edges.edg.xml"/>
+        <connection-files value="C:\Users\mprosperi\Desktop\replication_project\reproductions\2019_deng_et_al\1_data_source\sumo_simulation_single_ramp\stationary\_connections.con.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\mprosperi\Desktop\replication_project\reproductions\2019_deng_et_al\1_data_source\sumo_simulation_single_ramp\stationary\Network.net.xml"/>
+    </output>
+
+    <processing>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-1500.00,-150.00,1000.00,0.00" origBoundary="-1500.00,-150.00,1000.00,0.00" projParameter="!"/>
+
+    <edge id=":J0_0" function="internal">
+        <lane id=":J0_0_0" index="0" speed="25.00" length="0.10" shape="0.00,-8.00 0.00,-8.00"/>
+        <lane id=":J0_0_1" index="1" speed="25.00" length="0.10" shape="0.00,-4.80 0.00,-4.80"/>
+        <lane id=":J0_0_2" index="2" speed="25.00" length="0.10" shape="0.00,-1.60 0.00,-1.60"/>
+    </edge>
+    <edge id=":J10_0" function="internal">
+        <lane id=":J10_0_0" index="0" speed="25.00" length="8.20" shape="531.00,-11.20 533.46,-10.70 535.00,-9.60 536.54,-8.50 539.00,-8.00"/>
+        <lane id=":J10_0_1" index="1" speed="25.00" length="8.20" shape="531.00,-8.00 539.00,-8.00"/>
+        <lane id=":J10_0_2" index="2" speed="25.00" length="8.20" shape="531.00,-4.80 539.00,-4.80"/>
+        <lane id=":J10_0_3" index="3" speed="25.00" length="8.20" shape="531.00,-1.60 539.00,-1.60"/>
+    </edge>
+    <edge id=":clusterJ8_J9_0" function="internal">
+        <lane id=":clusterJ8_J9_0_0" index="0" speed="8.27" length="3.91" shape="404.77,-12.32 405.73,-11.69 406.46,-11.36 407.26,-11.22 408.41,-11.20"/>
+    </edge>
+    <edge id=":clusterJ8_J9_1" function="internal">
+        <lane id=":clusterJ8_J9_1_0" index="0" speed="25.00" length="3.99" shape="404.42,-8.00 408.41,-8.00"/>
+        <lane id=":clusterJ8_J9_1_1" index="1" speed="25.00" length="3.99" shape="404.42,-4.80 408.41,-4.80"/>
+        <lane id=":clusterJ8_J9_1_2" index="2" speed="25.00" length="3.99" shape="404.42,-1.60 408.41,-1.60"/>
+    </edge>
+
+    <edge id="E_main_after" from="J10" to="J1" priority="3" type="highway.motorway">
+        <lane id="E_main_after_0" index="0" speed="25.00" length="461.00" shape="539.00,-8.00 1000.00,-8.00"/>
+        <lane id="E_main_after_1" index="1" speed="25.00" length="461.00" shape="539.00,-4.80 1000.00,-4.80"/>
+        <lane id="E_main_after_2" index="2" speed="25.00" length="461.00" shape="539.00,-1.60 1000.00,-1.60"/>
+    </edge>
+    <edge id="E_main_before" from="J0" to="clusterJ8_J9" priority="3" type="highway.motorway">
+        <lane id="E_main_before_0" index="0" speed="25.00" length="404.42" shape="0.00,-8.00 404.42,-8.00"/>
+        <lane id="E_main_before_1" index="1" speed="25.00" length="404.42" shape="0.00,-4.80 404.42,-4.80"/>
+        <lane id="E_main_before_2" index="2" speed="25.00" length="404.42" shape="0.00,-1.60 404.42,-1.60"/>
+    </edge>
+    <edge id="E_main_with_acc_lane" from="clusterJ8_J9" to="J10" priority="3" type="highway.motorway">
+        <lane id="E_main_with_acc_lane_0" index="0" speed="25.00" length="122.59" shape="408.41,-11.20 531.00,-11.20"/>
+        <lane id="E_main_with_acc_lane_1" index="1" speed="25.00" length="122.59" shape="408.41,-8.00 531.00,-8.00"/>
+        <lane id="E_main_with_acc_lane_2" index="2" speed="25.00" length="122.59" shape="408.41,-4.80 531.00,-4.80"/>
+        <lane id="E_main_with_acc_lane_3" index="3" speed="25.00" length="122.59" shape="408.41,-1.60 531.00,-1.60"/>
+    </edge>
+    <edge id="E_ramp" from="J7" to="clusterJ8_J9" priority="-1" type="highway.motorway_link">
+        <lane id="E_ramp_0" index="0" speed="19.44" length="246.74" shape="200.90,-151.32 404.77,-12.32"/>
+    </edge>
+    <edge id="E_upstream" from="J_upstream" to="J0" priority="3" type="highway.motorway">
+        <lane id="E_upstream_0" index="0" speed="25.00" length="1500.00" shape="-1500.00,-8.00 0.00,-8.00"/>
+        <lane id="E_upstream_1" index="1" speed="25.00" length="1500.00" shape="-1500.00,-4.80 0.00,-4.80"/>
+        <lane id="E_upstream_2" index="2" speed="25.00" length="1500.00" shape="-1500.00,-1.60 0.00,-1.60"/>
+    </edge>
+
+    <tlLogic id="ramp_meter" type="static" programID="0" offset="0">
+        <phase duration="90" state="GGGG"/>
+    </tlLogic>
+
+    <junction id="J0" type="priority" x="0.00" y="0.00" incLanes="E_upstream_0 E_upstream_1 E_upstream_2" intLanes=":J0_0_0 :J0_0_1 :J0_0_2" shape="0.00,0.00 0.00,-9.60 0.00,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J1" type="dead_end" x="1000.00" y="0.00" incLanes="E_main_after_0 E_main_after_1 E_main_after_2" intLanes="" shape="1000.00,-9.60 1000.00,0.00"/>
+    <junction id="J10" type="priority" x="535.00" y="0.00" incLanes="E_main_with_acc_lane_0 E_main_with_acc_lane_1 E_main_with_acc_lane_2 E_main_with_acc_lane_3" intLanes=":J10_0_0 :J10_0_1 :J10_0_2 :J10_0_3" shape="539.00,0.00 539.00,-9.60 535.97,-10.43 534.03,-11.97 532.79,-12.56 531.00,-12.80 531.00,0.00">
+        <request index="0" response="0010" foes="0010" cont="0"/>
+        <request index="1" response="0000" foes="0001" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="J7" type="dead_end" x="200.00" y="-150.00" incLanes="" intLanes="" shape="200.00,-150.00 201.80,-152.64"/>
+    <junction id="J_upstream" type="dead_end" x="-1500.00" y="0.00" incLanes="" intLanes="" shape="-1500.00,0.00 -1500.00,-9.60"/>
+    <junction id="clusterJ8_J9" type="traffic_light" x="420.00" y="0.00" incLanes="E_ramp_0 E_main_before_0 E_main_before_1 E_main_before_2" intLanes=":clusterJ8_J9_0_0 :clusterJ8_J9_1_0 :clusterJ8_J9_1_1 :clusterJ8_J9_1_2" shape="408.41,0.00 408.41,-12.80 407.32,-12.84 406.94,-12.92 406.59,-13.07 406.18,-13.30 405.67,-13.65 403.87,-11.00 404.84,-10.22 405.03,-9.95 405.03,-9.76 404.82,-9.64 404.42,-9.60 404.42,0.00">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+
+    <connection from="E_main_before" to="E_main_with_acc_lane" fromLane="0" toLane="1" via=":clusterJ8_J9_1_0" tl="ramp_meter" linkIndex="1" dir="s" state="O"/>
+    <connection from="E_main_before" to="E_main_with_acc_lane" fromLane="1" toLane="2" via=":clusterJ8_J9_1_1" tl="ramp_meter" linkIndex="2" dir="s" state="O"/>
+    <connection from="E_main_before" to="E_main_with_acc_lane" fromLane="2" toLane="3" via=":clusterJ8_J9_1_2" tl="ramp_meter" linkIndex="3" dir="s" state="O"/>
+    <connection from="E_main_with_acc_lane" to="E_main_after" fromLane="0" toLane="0" via=":J10_0_0" dir="s" state="m"/>
+    <connection from="E_main_with_acc_lane" to="E_main_after" fromLane="1" toLane="0" keepClear="0" via=":J10_0_1" dir="s" state="M"/>
+    <connection from="E_main_with_acc_lane" to="E_main_after" fromLane="2" toLane="1" keepClear="0" via=":J10_0_2" dir="s" state="M"/>
+    <connection from="E_main_with_acc_lane" to="E_main_after" fromLane="3" toLane="2" keepClear="0" via=":J10_0_3" dir="s" state="M"/>
+    <connection from="E_ramp" to="E_main_with_acc_lane" fromLane="0" toLane="0" via=":clusterJ8_J9_0_0" tl="ramp_meter" linkIndex="0" dir="s" state="O"/>
+    <connection from="E_upstream" to="E_main_before" fromLane="0" toLane="0" via=":J0_0_0" dir="s" state="M"/>
+    <connection from="E_upstream" to="E_main_before" fromLane="1" toLane="1" via=":J0_0_1" dir="s" state="M"/>
+    <connection from="E_upstream" to="E_main_before" fromLane="2" toLane="2" via=":J0_0_2" dir="s" state="M"/>
+
+    <connection from=":J0_0" to="E_main_before" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J0_0" to="E_main_before" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J0_0" to="E_main_before" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":J10_0" to="E_main_after" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J10_0" to="E_main_after" fromLane="1" toLane="0" dir="s" state="M"/>
+    <connection from=":J10_0" to="E_main_after" fromLane="2" toLane="1" dir="s" state="M"/>
+    <connection from=":J10_0" to="E_main_after" fromLane="3" toLane="2" dir="s" state="M"/>
+    <connection from=":clusterJ8_J9_0" to="E_main_with_acc_lane" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":clusterJ8_J9_1" to="E_main_with_acc_lane" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":clusterJ8_J9_1" to="E_main_with_acc_lane" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":clusterJ8_J9_1" to="E_main_with_acc_lane" fromLane="2" toLane="3" dir="s" state="M"/>
+
+</net>

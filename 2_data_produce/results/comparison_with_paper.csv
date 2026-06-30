@@ -1,0 +1,13 @@
+Scenario,Controller,Paper Speed,Our Speed,Paper Queue,Our Queue,Paper Return,Our Return
+stationary,no_control,38.62,37.74,4.57,0.00,4579,4529.24
+stationary,fixed_time,47.84,42.04,39.49,10.91,5266,4914.11
+stationary,alinea,57.31,53.22,118.81,138.07,5450,4730.04
+stationary,ppo,55.24,69.16,92.26,144.55,5521,6564.62
+flat_peak,no_control,43.08,38.27,4.45,0.00,5116,4592.95
+flat_peak,fixed_time,51.49,46.56,37.28,10.94,5731,5455.99
+flat_peak,alinea,49.89,49.44,38.74,113.43,5522,4571.73
+flat_peak,ppo,55.71,66.51,28.32,144.68,6345,6245.18
+sharp_peak,no_control,54.66,49.30,1.47,0.00,6541,5916.35
+sharp_peak,fixed_time,59.76,58.64,38.37,11.45,6711,6899.72
+sharp_peak,alinea,57.54,56.50,11.09,29.67,6771,6424.50
+sharp_peak,ppo,60.97,70.64,29.34,144.83,6964,6739.19
